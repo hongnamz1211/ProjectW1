@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey khách hàng</title>
+    <style>
+        html {
+            margin-left: 20px;
+        }
+        .dollars {
+            width: 100px;
+        }
+        .cents {
+            width: 20px;
+        }
+        .product {
+            width: 800px;
+            height: 120px;
+        }
+        .statements {
+            margin-top: 20px;
+        }
+        table, tr, td, th{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th {
+            padding: 10px;
+        }
+        td {
+            text-align: center;
+        }
+        .background {
+            background-color: silver;
+        }
+        .left {
+            text-align: left;
+        }
+        div {
+            padding: 5px;
+        }
+        .none   {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <hr>
+    <h3>Market Research Survey</h3>
+    <p>Please take a few moments to complete this satisfaction survey</p>
+    <hr>
+    <h4>What is your age range?</h4>
+    <select class="select">
+        <option>18-24</option>
+        <option>25-34</option>
+        <option>35-50</option>
+        <option>50+</option>
+    </select>
+    <h4>What is your yearly income range</h4>
+    <select class="select">
+        <option>$0 - $25,000</option>
+        <option>$25,001 - $50,000</option>
+        <option>$50,001 - $100,000</option>
+        <option>$100,000+</option>
+    </select>
+    <div class="hover">
+        <h4>Gender Identity</h4>
+        <input type="radio" name="gender">Male <br>
+        <input type="radio" name="gender">Female <br>
+    </div>
+    <div class="hover">
+        <h4>Which of the following products have your purchased in the last 2 monts. Please check all that apply</h4>
+        <input type="checkbox"> Product 1 <br>
+        <input type="checkbox"> Product 2 <br>
+        <input type="checkbox"> Product 3
+    </div>
+    <div class="hover">
+        <h4>How often would you use our new product?</h4>
+        <input type="radio" name="product">Daily <br>
+        <input type="radio" name="product">Weekly <br>
+        <input type="radio" name="product">Monthly
+    </div>
+    <div class="hover">
+        <h4>What would you pay for the new product?</h4>
+        <table class="none">
+            <tr class="none">
+                <td class="none">$</td>
+                <td class="none"><input class="dollars" type="text"><b>.</b></td>
+                <td class="none"><input class="cents" type="text"></td>
+            </tr>
+            <tr class="none">
+                <td class="none"></td>
+                <td class="none">Dollars</td>
+                <td class="none">Cents</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h4>What features would you like to see in the new product</h4>
+        <input type="text" class="product">
+    </div>
+    <div class="statements">
+        <p>Please rate your lever of agreement with the following statements</p>
+        <table>
+            <tr>
+                <td class="background"></td>
+                <th class="background">Strongly Disagree</th>
+                <th class="background">Disagree</th>
+                <th class="background">Agree</th>
+                <th class="background">Strongly Agree</th>
+            </tr>
+            <tr>
+                <td class="left"><b>Our products are priced fairly</b></td>
+                <td><input type="radio" name="row1"><br>1</td>
+                <td><input type="radio" name="row1"><br>2</td>
+                <td><input type="radio" name="row1"><br>3</td>
+                <td><input type="radio" name="row1"><br>4</td>
+            </tr>
+            <tr>
+                <td class="background left"><b>Our products are high quality</b></td>
+                <td class="background"><input type="radio" name="row2"><br>1</td>
+                <td class="background"><input type="radio" name="row2"><br>2</td>
+                <td class="background"><input type="radio" name="row2"><br>3</td>
+                <td class="background"><input type="radio" name="row2"><br>4</td>
+            </tr>
+            <tr>
+                <td class="left"><b>You would recommend our product to a friend or coworker</b></td>
+                <td><input type="radio" name="row3"><br>1</td>
+                <td><input type="radio" name="row3"><br>2</td>
+                <td><input type="radio" name="row3"><br>3</td>
+                <td><input type="radio" name="row3"><br>4</td>
+            </tr>
+        </table>
+    </div>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
